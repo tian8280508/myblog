@@ -4,7 +4,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def home(request):
-	return HttpResponse("母亲大人新年快乐~")
+	return HttpResponse("home test~")
 
 def articlePage(request , article_id):
 	title = Article.objects();
