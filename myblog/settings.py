@@ -25,7 +25,7 @@ SECRET_KEY = '$zt&)4*86z^z9_4ra8mvt=y@knt&+obcw$+@fy04sf!@=bf$&r'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost' , '127.0.0.1' , '132.232.169.70']
+ALLOWED_HOSTS = ['localhost' , '127.0.0.1' , '132.232.169.70','californiatian.cn','www.californiatian.cn']
 
 
 # Application definition
@@ -120,7 +120,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
-
+# uwsgi官方教程中root_static后面加了一个/ but why?
 STATIC_ROOT = os.path.join(BASE_DIR, "root_static")
 
 # 如果不想用 STATICFILES_DIRS 可以不用，都放在 app 里的 static 中也可以
