@@ -1,2 +1,0 @@
-#!bin/sh
-uwsgi --socket myblog.sock --module myblog.wsgi
