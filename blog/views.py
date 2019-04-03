@@ -6,8 +6,8 @@ from .models import Article,User
 # Create your views here.
 from django.http import HttpResponse
 
-def home(request):
-	return HttpResponse("home test~")
+def index(request):
+	return HttpResponse("index test~")
 
 def page(request , article_id):
 	try:
@@ -18,8 +18,10 @@ def page(request , article_id):
 	except Article.DoesNotExist:
 		raise Http404("Article Does not Exist")
 	return render(request, 'blog/page.html' , context);
+	
 
-def index(request):
+
+def home(request):
 	context = {
 		'test' : '1234'
 	}
